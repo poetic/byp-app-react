@@ -1,0 +1,51 @@
+@import 'normalize';
+@import 'webflow';
+@import 'byp-v3.webflow';
+
+input[type="radio"]:checked + label {
+  background-image: url("https://daks2k3a4ib2z.cloudfront.net/582f3a50bcca26c246287bb8/582f4e28f5562dd3132de29d_radio-filled.png"); 
+}
+input[type="checkbox"]:checked + label {
+  background-image: url("https://daks2k3a4ib2z.cloudfront.net/582f3a50bcca26c246287bb8/582f460af5562dd3132dcd07_checkbox-checked.png"); 
+}
+input, textarea, select {
+  -webkit-appearance: none;
+  border-radius: 0; 
+}
+.w-input:focus {
+  border: 1px solid #e8002a;
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .15);
+}
+@media screen and (max-width: 676px) {
+  .print-item-type .form-subhead {
+    margin-left: auto;
+  }
+}
+input[disabled], input[readonly], textarea[disabled], textarea[readonly], select[disabled], select[readonly], .w-input[disabled], .w-input[readonly], .w-textarea[disabled], .w-textarea[readonly], .w-select[disabled], .w-select[readonly]  {
+  pointer-events: none;
+  font-size: 13px;
+  color: black;
+  background-color: none;
+  border-color: none;
+  background-image: none;
+  box-shadow: none;
+} 
+.read-only .text-input {
+  pointer-events: none;
+  font-size: 13px;
+  color: black;
+  background-color: none;
+  border-color: white;
+  background-image: none;
+  box-shadow: none;
+}
+.read-only label {
+  color: #aaa;
+}
+.read-only .caption {
+  color: #aaa;
+}
+.read-only .form-button-wrapper {
+  display: none;
+  pointer-events: none;
+}
